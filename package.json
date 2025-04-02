@@ -1,0 +1,24 @@
+{
+  "name": "live2dapi-noa",
+  "version": "1.0.8",
+  "description": "nova1751自建的live-2d api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nova1751",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nova1751/live2d-api.git"
+  },
+  "keywords": [
+    "live2d",
+    "model",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/nova1751/live2d-api/issues"
+  },
+  "homepage": "https://github.com/nova1751/live2d-api#readme"
+}

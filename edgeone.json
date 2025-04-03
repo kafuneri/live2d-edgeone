@@ -1,42 +1,60 @@
 {
-"headers": [
-    {
-      "source": "/*",
-      "headers": [
+    "redirects": [
         {
-          "key": "X-Frame-Options",
-          "value": "DENY"
+            "source": "/model/dsr50",
+            "destination": "https://live2d.kafuchino.top/model/dsr50",
+            "statusCode": 301
         },
         {
-          "key": "Cache-Control",
-          "value": "max-age=7200"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, HEAD, OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization, X-Requested-With"
-        },
-        {
-          "key": "Access-Control-Max-Age",
-          "value": "86400"
+            "source": "/model/fairy",
+            "destination": "https://live2d.kafuchino.top/model/fairy",
+            "statusCode": 301
         }
-      ]
-    },
-    {
-      "source": "/model/*",
-      "headers": [
+    ],
+    "headers": [
         {
-          "key": "Cache-Control",
-          "value": "max-age=31536000"
+            "source": "/*",
+            "headers": [
+                {
+                    "key": "X-Frame-Options",
+                    "value": "DENY"
+                },
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=7200"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Authorization, X-Requested-With"
+                },
+                {
+                    "key": "Access-Control-Max-Age",
+                    "value": "86400"
+                }
+            ]
+        },
+        {
+            "source": "/model/*",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=31536000"
+                }
+            ]
         }
-      ]
-    }
-]
-  }
+    ],
+    "caches": [
+        {
+            "source": "/model/*",
+            "cacheTtl": 8640000
+        }
+    ]
+}

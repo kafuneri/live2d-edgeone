@@ -1,13 +1,13 @@
 {
     "redirects": [
         {
-            "source": "/model/dsr50",
-            "destination": "https://live2d.kafuchino.top/model/dsr50",
+            "source": "/model/dsr50/*",
+            "destination": "https://live2d.kafuchino.top/model/dsr50/:splat",
             "statusCode": 301
         },
         {
-            "source": "/model/fairy",
-            "destination": "https://live2d.kafuchino.top/model/fairy",
+            "source": "/model/fairy/*",
+            "destination": "https://live2d.kafuchino.top/model/fairy/:splat",
             "statusCode": 301
         }
     ],
